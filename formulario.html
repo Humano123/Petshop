@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pet shop</title>
+    <style>
+        body{
+            text-align: center;
+        }
+        .input{
+            border: 1;
+            color: black;
+            border-radius: 5vh;
+            width: 50%;
+        }
+        br{
+            user-select: none;
+        }
+        .iinput{
+            background-color: green;
+            border: 0;
+            color: aliceblue;
+            border-radius: 1vh;
+            width: 100px;
+            height: 50px;
+            font-size: 200%;
+            transition: transform 0.2s ease-in-out;
+        }
+        .iinput:hover{
+            cursor: pointer;
+            transform: translateY(-5px);
+        }
+        .iinput:active{
+            cursor: progress;
+            transform: scale(1.5);
+        }
+    </style>
+</head>
+<body>
+    <h1>Peça já</h1>
+    <form action="">
+        <input class="input" type="text" placeholder="Fulano" autocomplete="off" title="Digitar o nome">
+        <br>
+        <br>
+        <input class="input" type="number" placeholder="+00 00 0000-0000" autocomplete="on" title="Digitar o numero">
+        <br>
+        <br>
+        <input class="input" type="number" placeholder="Idade" autocomplete="off" title="Digitar a idade">
+        <br>
+        <br>
+        <input class="input" type="email" placeholder="EXEMPLO@Email.com" autocomplete="on" title="Digite seu E-mail">
+        <br>
+        <br>
+        <input class="iinput" type="button" value="Enviar">
+    </form>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <a href="index.html">Voltar</a>
+</body>
+</html>

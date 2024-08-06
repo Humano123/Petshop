@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pet shop</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .a{
+            background-color: chocolate;
+            display: flex;
+        }
+        .aa{
+            color: rgb(102, 81, 31);
+        }
+        .ss{
+            color: rgb(0, 0, 0);
+        }
+        .saparte{
+            background-color: rgb(190, 39, 39);
+            border: 0;
+            color: black;
+            box-shadow: 1px 1px 1px rgb(102, 26, 26);
+            border-radius: 1.5vh;
+            transition: transform 0.05s ease-in-out;
+            width: 30%;
+        }
+        .saparte:active{
+            transform: scale(0.9);
+            color: aliceblue;
+        }
+        .content{
+            text-align: center;
+        }
+        .img{
+            z-index: 2;
+        }
+        .peco, .peco2{
+            color: rgb(76, 151, 0);
+        }
+        .peco{
+            font-size: 150%;
+        }
+        .peco2{
+            font-size: 70%;
+        }
+        .coisa{
+            display: flex;
+            justify-content: space-around;
+        }
+        .compra{
+            background-color: green;
+            color: black;
+            border: 0;
+            box-shadow: 1px 1px 1px rgb(0, 45, 0);
+            border-radius: 1.5vh;
+            width: 30%;
+            transition: transform 0.05s ease-in-out;
+        }
+        .compra:active{
+            transform: scale(0.9);
+            color: aliceblue;
+        }
+        #paa:hover{
+            cursor: pointer;
+        }
+        #paa:focus{
+            cursor: progress;
+        }
+        .f:Active{
+            cursor: auto;
+        }
+        .galeria{
+            display: flex;
+            justify-content: space-between;
+        }
+        .foto{
+            transition: transform 0.3s ease-in-out;
+            border-radius: 1vh;
+        }
+        .foto:hover{
+            transform: scale(2);
+            opacity: 0.8;
+            z-index: 1;
+        }
+        .formulario{
+            background-color: rgb(143, 143, 95);
+            width: 50%;
+            margin: auto;
+            border-radius: 2vh;
+        }
+        .f{
+            background-color: rgb(157, 157, 157);
+            color: rgb(0, 0, 0);
+            font-size: 120%;
+            border: 1;
+            border-color: rgb(110, 167, 117);
+        }
+        @media (max-width: 1300px) {
+            .foto:hover{
+                transform: scale(1.2);
+            }
+        }
+        .section{
+            background-color: blueviolet;
+            width: 40%;
+            margin: auto;
+            border-radius: 2vh;
+            color: aliceblue;
+        }
+        .aae{
+            color: black;
+        }
+        .arpe{
+            color: brown;
+        }
+        #paa{
+            position: sticky;
+            top: 0;
+            border-radius: 4px;
+            z-index: 2;
+        }
+        .asssd{
+            display: flex;
+            justify-content: space-between;
+        }
+        .asdasdasd{
+            z-index: 1;
+        }
+        .asdasdasdasdasd{
+            z-index: 2;
+        }
+        header{
+            color: black;
+            padding: 10px 0;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            background-color: rgb(236, 143, 77);
+        }
+        .li{
+            font-size: 100%;
+        }
+
+        @media (max-width: 1300px) {
+            .foto{ 
+                width: 200px;
+                height: 150px;
+            }
+            .lllogot{
+                width: 300px;
+                height: 100px;
+            }       
+            }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logotipo">
+            <img class="lllogot" src="logotipo.png" width="1200" height="300" ondragstart="return false">
+        </div>
+        <nav>
+            <ul>
+                <li class="li"><a href="formulario.html">Formularios</a></li>
+                <li class="li"><a href="galeria.html">Galeria</a></li>
+                <li class="li"><a href="produtos.html">Produtos</a></li>
+            </ul>
+        </nav>
+    </header>
+<div class="content">
+    <p>Olá!</p>
+    <br>
+    <br>
+    <br>
+    <br>
+    <p>Esses são apenas alguns dos produtos disponíveis no Petshop "Melhor Amigo".
+        Temos um catálogo completo e diversificado, cuidadosamente selecionado para
+        atender às necessidades dos animais de estimação. Nossa equipe terá prazer em orientá-lo e ajudá-lo a escolher os melhores produtos para o seu amiguinho
+        de quatro patas</p>
+    <br>
+    <p>Os serviços oferecidos incluem:
+        Limpeza: Serviços de limpeza para animais de estimação, como banho, tosa higiênica e tosa completa, focados no bem-estar e na higiene dos pets.
+        Tosa: Opções variadas de tosa, desde estilos específicos de raças até tosas personalizadas conforme preferência do cliente, utilizando técnicas seguras e confortáveis para os animais.
+        Venda de ração: Disponibilidade de uma ampla gama de rações de alta qualidade para cães e gatos, adaptadas às necessidades específicas de cada animal, com opções para diferentes idades, tamanhos e condições de saúde.
+        Estes serviços visam proporcionar cuidado completo e atenção especial aos pets, garantindo não apenas sua higiene e alimentação adequada, mas também o bem-estar geral.
+        </p>
+    <section class="section"><p>Limpeza está com uma <b class="aae">PROMOÇÃO</b> imperdivel! de 27,99 para 10,99!!!</p></section>
+    <br>
+    <br>
+    <br>
+    <h3>Limpeza do seu <b class="arpe">Pet</b></h3>
+    <p>Quando se trata de serviços de limpeza para animais de estimação, nosso foco está em proporcionar uma higiene completa e confortável para os pets. Isso inclui banhos personalizados, onde utilizamos produtos adequados ao tipo de pele e pelagem do animal, garantindo uma limpeza profunda sem causar irritações. Nossos profissionais são treinados para lidar com diferentes temperamentos e necessidades, proporcionando uma experiência tranquila e segura durante o banho.
+
+        Além do banho, oferecemos serviços como limpeza de ouvidos e corte de unhas, fundamentais para a saúde preventiva dos pets. Essas práticas ajudam a evitar problemas como infecções e desconforto, mantendo-os saudáveis e felizes.
+        
+        Nosso objetivo é não apenas manter a aparência estética dos animais, mas também promover o bem-estar geral através da limpeza e cuidados regulares. Estamos comprometidos em oferecer um ambiente acolhedor e serviços de qualidade, garantindo que cada pet receba o tratamento individualizado que merece.</p>
+        <br>
+        <br>
+        <br>
+        <h3>Tosa do seu <b class="arpe">Pet</b></h3>
+        <p>No que diz respeito aos serviços de tosa para animais de estimação, nossa abordagem é centrada no bem-estar e na estética dos pets. Nossos profissionais são treinados para oferecer tosas que atendam às necessidades específicas de cada animal, levando em consideração fatores como tipo de pelagem, raça e preferências dos proprietários.
+
+            Ao realizar a tosa, utilizamos técnicas especializadas para garantir um corte preciso e confortável. Isso inclui o uso de equipamentos adequados e produtos de cuidado da pelagem que ajudam a manter a integridade e a saúde do pelo do animal.
+            
+            Nosso objetivo não é apenas deixar os pets visualmente atraentes, mas também garantir que eles se sintam confortáveis durante todo o processo. Para isso, nossos profissionais são cuidadosos e pacientes, criando um ambiente tranquilo e seguro para cada pet.
+            
+            Além disso, oferecemos a opção de estilos de tosa personalizados, adaptados às preferências estéticas dos proprietários. Seja um corte padrão da raça ou um estilo mais criativo, estamos comprometidos em alcançar resultados que satisfaçam tanto os clientes quanto os animais.
+            
+            Ao escolher nossos serviços de tosa, os clientes podem confiar na expertise de nossa equipe para proporcionar um cuidado de alta qualidade, promovendo não apenas a beleza exterior, mas também o conforto e o bem-estar geral de seus queridos animais de estimação.</p>
+            <br>
+            <br>
+            <br>
+            <h3>Banho do seu <b class="arpe">Pet</b></h3>
+            <p>Quando se trata dos nossos serviços de banho para animais de estimação, priorizamos não apenas a limpeza, mas também o conforto e o bem-estar dos pets. Nosso objetivo é proporcionar uma experiência agradável e relaxante, garantindo que cada animal se sinta confortável durante todo o processo.
+
+                Utilizamos produtos de alta qualidade, especialmente formulados para o tipo de pele e pelagem de cada pet. Isso ajuda a garantir uma limpeza profunda sem causar irritações ou desconforto, mantendo a saúde da pele e do pelo.
+                
+                Nossos profissionais são treinados para lidar com diferentes temperamentos e necessidades dos animais, proporcionando um ambiente seguro e acolhedor durante o banho. Eles estão atentos a sinais de estresse e ansiedade, ajustando o processo conforme necessário para garantir uma experiência tranquila para o pet.
+                
+                Além da limpeza básica, oferecemos serviços adicionais como limpeza de ouvidos, corte de unhas e escovação dentária, que são fundamentais para a saúde preventiva dos animais. Esses cuidados extras ajudam a evitar problemas como infecções e contribuem para o bem-estar geral do pet.
+                
+                Estamos comprometidos em proporcionar não apenas um banho eficaz, mas também um momento de cuidado e carinho para os animais de estimação, garantindo que saiam do nosso espaço não apenas limpos, mas também felizes e relaxados.</p>
+                <br>
+                <br>
+                <br>
+                <h3>Venda de ração do seu <b class="arpe">Pet</b></h3>
+                <p>Na venda de ração para animais de estimação, nosso foco está em oferecer produtos de alta qualidade que atendam às necessidades nutricionais específicas de cada pet. Trabalhamos com uma variedade de marcas renomadas e opções que são cuidadosamente selecionadas para garantir uma alimentação saudável e equilibrada para cães e gatos.
+
+                    Nosso objetivo é proporcionar aos clientes acesso a uma ampla gama de rações que incluem opções para diferentes idades, tamanhos, condições de saúde e preferências alimentares dos animais. Cada produto é formulado com ingredientes de qualidade, balanceados para fornecer os nutrientes essenciais que os pets precisam para uma vida saudável e ativa.
+                    
+                    Nossa equipe está sempre disponível para fornecer orientação e recomendações personalizadas, ajudando os clientes a escolherem a melhor opção de ração para seus animais de estimação. Entendemos a importância da alimentação na saúde e no bem-estar dos pets, e nos esforçamos para oferecer produtos que contribuam para uma vida longa e feliz dos animais.
+                    
+                    Além da venda de rações, também oferecemos outros produtos relacionados à alimentação e cuidados com pets, como petiscos saudáveis, suplementos nutricionais e acessórios para alimentação. Nosso compromisso é proporcionar uma experiência de compra conveniente e satisfatória, garantindo que os clientes encontrem tudo o que precisam para cuidar bem de seus animais de estimação.</p>
+                    <br>
+                    <br>
+                    <h2>Apresentação dos produtos</h2>
+                </div>
+                    <br>
+                    <br>
+                    <div class="coisa">
+                    <div class="Racao">
+                    <img class="img" src="https://m.media-amazon.com/images/I/517DTupFR3L._AC_UF1000,1000_QL80_.jpg" alt="Ração" width="100" height="150" ondragstart="return false">
+                    <p>Ração <b class="peco">R$5</b><b class="peco2">,90</b></p>
+                </div>
+                <div class="Pente">
+                    <img src="https://www.petshopagroaves.com.br/uploads/petshopagroaves/produtos_imagens/pente-anti-pulgas-521588821977680695635.jpg" alt="Pente" width="100" height="150" ondragstart="return false">
+                    <p>Pente <b class="peco">R$10</b><b class="peco2">,90</b></p>
+                </div>
+            </div>
+            <div class="content">
+            <br>
+            <br>
+            <h2>Galeria de fotos de animais atendidos no petshop</h2>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <div class="Galeria">
+            <a href="1.html"><img class="foto" src="https://www.universodasaudeanimal.com.br/wp-content/uploads/sites/57/2021/07/Cacho-e-gato-juntos-no-chao-posando-pra-foto.jpg" alt="Cachorro e gato" width="300" height="250" ondragstart="return false"></a>
+            <a href="2.html"><img class="foto" src="https://blog.cobasi.com.br/wp-content/uploads/2019/08/como-acostumar-cachorro-com-gato.jpg" alt="Cachorro branco e gato branco" width="300" height="250" ondragstart="return false"></a>
+            <a href="3.html"><img class="foto" src="https://www.petz.com.br/blog//wp-content/uploads/2019/06/cachorro-filhote.jpg" alt="Cachorro branco" width="300" height="250" ondragstart="return false"></a>
+            <a href="4.html"><img class="foto" src="https://qph.cf2.quoracdn.net/main-qimg-e3166ef938b91d97fc6d25dd02296978-lq" alt="Gato preto" width="300" height="250" ondragstart="return false"></a>
+            <a href="5.html"><img class="foto" src="https://conteudo.imguol.com.br/c/entretenimento/eb/2022/03/23/cachorro-da-raca-lulu-da-pomeramia-1648065976007_v2_900x506.jpg" alt="Cachorro marrom" width="300" height="250" ondragstart="return false"></a>
+            <a href="6.html"><img class="foto" src="https://wx.mlcdn.com.br/ponzi/production/portaldalu/104360_00.jpg" alt="furão cinza" width="300" height="250" ondragstart="return false"></a>
+        </div>
+        <br>
+        <br>
+        <br>
+        <br>
+
+        <h1>Formulario</h1>
+    <section class="formulario">
+        <form action="">
+            <label for="nome">Nome:</label>
+            <input class="f" type="text" name="nome">
+            <br>
+            <label for="email">E-mail:</label>
+            <input class="f" type="email" name="email">
+            <br>
+            <label for="endereco">Endereço:</label>
+            <input class="f" type="text" name="endereco">
+            <br>
+            <label for="telefone">Numero de telefone:</label>
+            <input class="f" type="number" name="telefone">
+        </form>
+    </section>
+        </div>
+
+           </div> 
+</body>
+</html>

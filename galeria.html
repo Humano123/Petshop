@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pet shop</title>
+    <style>
+                .galeria{
+            display: flex;
+            justify-content: space-between;
+        }
+        .foto{
+            transition: transform 0.3s ease-in-out;
+            border-radius: 1vh;
+        }
+        .foto:hover{
+            transform: scale(2);
+            opacity: 0.8;
+            z-index: 1;
+        }
+        @media (max-width: 1300px) {
+            .foto:hover{
+                transform: scale(1.2);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="Galeria">
+        <a href="1.html"><img class="foto" src="https://www.universodasaudeanimal.com.br/wp-content/uploads/sites/57/2021/07/Cacho-e-gato-juntos-no-chao-posando-pra-foto.jpg" alt="Cachorro e gato" width="300" height="250" ondragstart="return false"></a>
+        <a href="2.html"><img class="foto" src="https://blog.cobasi.com.br/wp-content/uploads/2019/08/como-acostumar-cachorro-com-gato.jpg" alt="Cachorro branco e gato branco" width="300" height="250" ondragstart="return false"></a>
+        <a href="3.html"><img class="foto" src="https://www.petz.com.br/blog//wp-content/uploads/2019/06/cachorro-filhote.jpg" alt="Cachorro branco" width="300" height="250" ondragstart="return false"></a>
+        <a href="4.html"><img class="foto" src="https://qph.cf2.quoracdn.net/main-qimg-e3166ef938b91d97fc6d25dd02296978-lq" alt="Gato preto" width="300" height="250" ondragstart="return false"></a>
+        <a href="5.html"><img class="foto" src="https://conteudo.imguol.com.br/c/entretenimento/eb/2022/03/23/cachorro-da-raca-lulu-da-pomeramia-1648065976007_v2_900x506.jpg" alt="Cachorro marrom" width="300" height="250" ondragstart="return false"></a>
+        <a href="6.html"><img class="foto" src="https://wx.mlcdn.com.br/ponzi/production/portaldalu/104360_00.jpg" alt="furão cinza" width="300" height="250" ondragstart="return false"></a>
+    </div>
+    <a href="index.html">Voltar</a>
+</body>
+</html>
